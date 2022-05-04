@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.ibb.co/P5hFb9H/meebackground.png');
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  min-height: 100vh;
+  
+}
+
+.relogio {
+  font-size: 3em;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+h1 {
+  font-family: 'Recursive', sans-serif;
+  color: rgb(255, 119, 119);
+}
+
+p button {
+  font-family: 'Inter';
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  background: rgb(250, 255, 183);
+  max-width: 500px;
+  height: 500px;
+  border-radius: 3%;
+}
+
+
+.butoes {
+  display: flex;
+}
+.iniciar, .pausar, .zerar {
+  align-self: flex-end;
+  width: 146px;
+  margin: 0;
+  height: 115px;
+  border-radius: 3%;
+  font-family: 'Recursive';
+  border: none;
+  background-color: rgb(250, 255, 183);
+}
+
+.iniciar:hover, .pausar:hover, .zerar:hover{
+  background-color: rgba(255, 253, 116, 0.788);
+  transition: ease-in-out 0.3s;
+}
+
+.pausado {
+  color: red;
+}
+
+.clicado{
+  background-color: rgba(255, 253, 116, 0.788);
+}
+.mern {
+  position: absolute;
+  right: 220px;
+  bottom: 250px;
+}
+
+.merntext{
+  position: absolute;
+  right: 300px;
+  bottom: 415px;
+  font-size: 12px;
+  font-family: 'Lora', serif;
+  color:antiquewhite;
+}
+
+.mee {
+  position: absolute;
+  bottom: 330px;
+}
+
+.meetext{
+  position: absolute;
+  top: 320px;
+  font-family: 'Cute Font', cursive;
+  color: rgba(255, 123, 0, 0.945); 
+  font-size: 40px;
+}
+
+@media all and (min-width: 720px) and (max-width: 1330px){
+  .mern{
+    right: 100px;
+    bottom: 200px;
+  }
+  
+  .merntext{
+    bottom: 370px;
+    right: 100px;
+  }
+
+  .mee {
+    bottom: 230px;
+  }
+
+  .meetext{
+    top: 220px;
+  }
+}
